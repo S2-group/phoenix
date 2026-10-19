@@ -26,11 +26,6 @@ body {
   line-height: 1.4;
 }
 
-.highlight {
-  font-style: italic;
-  color: var(--accent);
-}
-
 .page {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -51,24 +46,12 @@ header img {
   margin: 0 auto;
 }
 
-/*.logo {
-/*  display: inline-flex;
-/*  align-items: center;
-/*  justify-content: center;
-/*  width: clamp(5.5rem, 20vw, 8rem);
-/*  aspect-ratio: 4 / 3;
-/*  border: 2px solid var(--border);
-/*  border-radius: 14px;
-/*  font-size: clamp(1.5rem, 5vw, 2.25rem);
-/*  text-decoration: none;
-/*  color: inherit;
-/*}*/
-
 h1 {
   margin: 1rem 0 0;
   font-size: clamp(2rem, 6vw, 3.25rem);
   font-weight: 400;
   line-height: 1.1;
+  color: var(--accent);
 }
 
 /* Sections: always stacked in a single column */
@@ -84,18 +67,97 @@ h2 {
   font-size: clamp(1.25rem, 3vw, 1.75rem);
   font-weight: 400;
   line-height: 1.2;
+  color: var(--accent);
 }
 
 p {
   margin: 0;
 }
 
+strong {
+  font-weight: 700;
+}
+
+.highlight {
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* People */
+.people-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.people-list li {
+  display: flex;
+  flex-direction: column;
+}
+
+.people-list .name {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.people-list .role {
+  color: var(--accent);
+}
+
+.people-list .institution {
+  opacity: 0.8;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(233, 230, 223, 0.2);
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem 2.5rem;
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+.logos img {
+  display: block;
+  /*height: clamp(2.5rem, 8vw, 4rem);*/
+  height: 8rem;
+  width: auto;
+  max-width: 100%;
+}
+
+footer p {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+footer a {
+  color: var(--accent);
+}
+
 a:focus-visible {
-  outline: 3px solid currentColor;
+  outline: 3px solid var(--accent);
   outline-offset: 3px;
 }
 
 @media (min-width: 40rem) {
+  .people-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1.5rem;
+  }
   .page {
     padding: 2.5rem 2rem 4rem;
   }
