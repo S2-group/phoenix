@@ -16,7 +16,7 @@
   --accent: #8fd18a; /* new leaf */
   --accent-strong: #b6e8a8;
   --ember: #f2a65a; /* phoenix glow */
-  --logo-bg: #f4f7f1;
+  --logo-bg: #0f221a;
   --max-width: 50rem;
   --text-width: 48rem;
   --nav-height: 3.25rem;
@@ -32,7 +32,7 @@
     --accent: #2c7a4b; /* forest green */
     --accent-strong: #1d5c36;
     --ember: #a4540f;
-    --logo-bg: #ffffff;
+    --logo-bg: #0f221a;
   }
 }
 
@@ -293,6 +293,40 @@ h3 {
   color: var(--muted);
 }
 
+/* References */
+.cite {
+  font-size: 0.75em;
+  line-height: 0;
+  white-space: nowrap;
+}
+.cite a {
+  text-decoration: none;
+}
+
+.references {
+  max-width: var(--text-width);
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  display: grid;
+  gap: 0.6rem;
+  font-size: 0.9em;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+ul.references {
+  list-style: disc;
+}
+.references li:target {
+  color: var(--text);
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+.resources-title {
+  max-width: var(--text-width);
+  margin: 1.75rem auto 0.75rem;
+}
+
 /* News */
 .news-list {
   list-style: none;
@@ -367,25 +401,38 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem 3rem;
   list-style: none;
   margin: 0 0 1.75rem;
-  padding: 0;
+  padding: 2.25rem 2rem;
+  background: var(--logo-bg);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  isolation: isolate;
 }
 
 .logos li {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
-  padding: 0.75rem 1.25rem;
-  background: var(--logo-bg);
-  border-radius: 0.75rem;
 }
 
+/* Logos keep their proportions: capped in height,
+   and never wider than the screen. */
 .logos img {
   display: block;
-  height: 3.5rem;
   width: auto;
-  max-width: 100%;
+  height: auto;
+  max-height: 6.5rem;
+  max-width: min(100%, 28rem);
+}
+
+/* Logos with a white background and dark text: invert them so the
+   background turns black, then "screen" blend so black disappears
+   into the green panel. */
+.logos .on-white {
+  filter: invert(1) hue-rotate(180deg);
+  mix-blend-mode: screen;
 }
 
 .footer-nav {

@@ -96,19 +96,19 @@
             <div>
               <dt>394 ZB</dt>
               <dd>
-                of new data expected in 2028, up from 132.4 ZB in 2023 (IDC)
+                of new data expected in 2028, up from 132.4 ZB in 2023 (IDC)<sup class="cite"><a href="#ref-1" aria-label="Reference 1">[1]</a></sup>
               </dd>
             </div>
             <div>
               <dt>85%</dt>
               <dd>
                 of stored enterprise data is not business critical (Veritas
-                survey of 2,550 IT decision makers in 22 countries)
+                survey of 2,550 IT decision makers in 22 countries)<sup class="cite"><a href="#ref-3" aria-label="Reference 3">[3]</a></sup>
               </dd>
             </div>
             <div>
               <dt>2%</dt>
-              <dd>of global carbon emissions is estimated to come from unused data</dd>
+              <dd>of global carbon emissions is estimated to come from unused data<sup class="cite"><a href="#ref-4" aria-label="Reference 4">[4]</a></sup></dd>
             </div>
           </dl>
           <p>
@@ -116,8 +116,9 @@
             estimates that only 15% of organisational data is business
             critical, 33% is redundant, obsolete or trivial, and 52% is
             unidentified, yet all of it keeps consuming energy. Similar figures
-            apply to research. The growth of AI investments is accelerating
-            these trends.
+            apply to research. IDC also expects the worldwide installed storage
+            capacity to exceed 19 ZB by 2028, up from 9.3 ZB in 2023<sup class="cite"><a href="#ref-2" aria-label="Reference 2">[2]</a></sup>, and
+            the growth of AI investments is accelerating these trends.
           </p>
         </div>
       </section>
@@ -132,9 +133,11 @@
 
           <h3>SIIA: Sustainability IT Impact Assessment</h3>
           <p>
-            Defined by NCDD, the SIIA grew out of industrial practice. It guides
+            Defined by <a href="https://coalitieduurzamedigitalisering.nl">NCDD</a>, the
+            <a href="https://coalitieduurzamedigitalisering.nl/sustainable-it-impact-assessment-siia/">SIIA</a>
+            grew out of industrial practice. It guides
             people and organisations who want to start investing in sustainable
-            IT. It consists of a guide, a wiki of tactics collected in industrial
+            IT. It consists of a guide, a <a href="https://wiki.coalitieduurzamedigitalisering.nl">wiki</a> of tactics collected in industrial
             use cases, and the SIIA radar, a visual overview for selecting and
             prioritising those tactics. Practitioners find it easy to
             understand, pragmatic and visually appealing, but its tactics are
@@ -144,7 +147,7 @@
           <h3>SAF Toolkit: Sustainability Assessment Framework</h3>
           <p>
             Built on rigorous academic research and over a decade of case
-            studies, the SAF Toolkit helps software architects and IT decision
+            studies, the <a href="https://github.com/S2-group/SAF-Toolkit">SAF Toolkit</a><sup class="cite"><a href="#ref-5" aria-label="Reference 5">[5]</a></sup> helps software architects and IT decision
             makers model sustainability as a software quality property. It
             offers a database of reusable sustainability-quality (SQ) concerns,
             an open source archive of tactics, a checklist and a decision graph.
@@ -220,7 +223,8 @@
             <h3>WP2.2: Validate existing and create new knowledge</h3>
             <p>
               Model and measure green tactics that reduce the energy use and
-              carbon footprint of each use case.
+              carbon footprint of each use case. See also the S2 group's
+              <a href="https://s2group.cs.vu.nl/AwesomeAndDarkTactics">Awesome and Dark Tactics</a>.
             </p>
             <p class="milestone">
               <strong>M3:</strong> Existing tactics validated and new ones
@@ -246,13 +250,15 @@
         <h2 id="impact-title">Potential impact</h2>
         <div class="prose">
           <p>
-            Recent news reports that data centres in the Netherlands used more
-            than <strong>4.6% of national energy</strong> in 2025. Of the
-            roughly 200 data centres, about 75% belong to universities,
-            hospitals and industry and serve in-house storage and processing.
+            According to Statistics Netherlands (CBS), the 45 or so commercial
+            data centres in the Netherlands accounted for
+            <strong>4.6% of national energy use</strong> in 2024<sup class="cite"><a href="#ref-6" aria-label="Reference 6">[6]</a></sup>. The country has
+            some 200 data centres in total. About 75% of them are attached to
+            universities, hospitals and industry and used for in-house data
+            processing, and are not included in that figure.
           </p>
           <p>
-            If a large share of that data is unnecessary, as in the 85% found
+            If a large share of the data stored in data centres is unnecessary, as in the 85% found
             for enterprises, the project can contribute substantially to energy
             optimisation. The aim is that future research produces data that is
             <em class="highlight">sustainable by design</em>.
@@ -329,21 +335,101 @@
           </li>
         </ul>
       </section>
+      <section id="references" aria-labelledby="references-title">
+        <h2 id="references-title">References</h2>
+        <ol class="references">
+          <li id="ref-1">
+            IDC (2024). <em>IDC Global Datasphere Forecast, 2024–2028</em>,
+            US52076424. Technical report.
+          </li>
+          <li id="ref-2">
+            IDC (2024). <em>IDC Worldwide Global StorageSphere Forecast,
+            2024–2028</em>, US52312824. Technical report.
+          </li>
+          <li id="ref-3">
+            Veritas (2016).
+            <a href="https://www.veritas.com/content/dam/Veritas/docs/reports/veritas-strike-global-report_a4-sdc2.pdf"
+              >The Databerg Report: See what others don’t – identify the value,
+              risk and cost of your data</a
+            >. Technical report.
+          </li>
+          <li id="ref-4">
+            Colwell, R. (2025).
+            <a href="https://researchworld.com/innovations/the-hidden-cost-of-unused-data-and-how-smarter-research-can-help"
+              >The Hidden Cost of Unused Data – And How Smarter Research Can
+              Help</a
+            >. ResearchWorld.
+          </li>
+          <li id="ref-5">
+            Lago, P., Condori Fernandez, N., Fatima, I., Funke, M., &amp;
+            Malavolta, I. (2024). The Sustainability Assessment Framework
+            Toolkit: A Decade of Modeling Experience.
+            <em>Software &amp; Systems Modeling</em>.
+            <a href="https://doi.org/10.1007/s10270-024-01230-9"
+              >https://doi.org/10.1007/s10270-024-01230-9</a
+            >
+          </li>
+          <li id="ref-6">
+            Pascoe, R. (2025, 15 December).
+            <a href="https://www.dutchnews.nl/2025/12/big-data-centres-use-as-much-electricity-as-1-9-million-homes"
+              >Big data centres use as much electricity as 1.9 million homes</a
+            >. DutchNews.nl.
+          </li>
+        </ol>
+        <h3 class="resources-title">Resources</h3>
+        <ul class="references">
+          <li>
+            <a href="https://github.com/S2-group/SAF-Toolkit">SAF Toolkit</a>
+            on GitHub
+          </li>
+          <li>
+            <a href="https://coalitieduurzamedigitalisering.nl/sustainable-it-impact-assessment-siia/"
+              >SIIA website</a
+            >
+            and <a href="https://wiki.coalitieduurzamedigitalisering.nl">wiki</a>
+          </li>
+          <li>
+            <a href="https://s2group.cs.vu.nl/AwesomeAndDarkTactics">Awesome and Dark Tactics</a>
+          </li>
+          <li>
+            <a href="https://coalitieduurzamedigitalisering.nl">NCDD</a>
+            (National Coalition for Sustainable Digitalization): a
+            public-private partnership between government, businesses,
+            educational and research institutions, and civil society
+            organizations.
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <h2>Funded and supported by</h2>
+        <h2>Funders and partners</h2>
         <ul class="logos">
           <li><img src="nwo_logo.png" alt="NWO" /></li>
           <li><img src="s2_logo.png" alt="S2 Group" /></li>
           <li><img src="logo3.svg" alt="Partner 3" /></li>
+          <li>
+            <img
+              src="ASI-logo-RGB.png"
+              class="on-white"
+              alt="Vrije Universiteit Amsterdam – Amsterdam Sustainability Institute"
+            />
+          </li>
+          <li>
+            <img
+              src="VU_Sustainability_Office.png"
+              class="on-white"
+              alt="Vrije Universiteit Amsterdam – Sustainability Office"
+            />
+          </li>
         </ul>
         <nav class="footer-nav" aria-label="Footer">
           <a href="#top">Back to top</a>
           <a href="#news">News</a>
           <a href="#goal">Goal</a>
           <a href="#people">People</a>
+          <a href="#references">References</a>
         </nav>
         <p class="legal">Released under the <a href="LICENSE">MIT License</a>.</p>
       </div>
