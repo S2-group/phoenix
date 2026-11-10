@@ -3,118 +3,350 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Phoenix-Homepage</title>
+    <title>Phoenix – Energy-aware Data Management</title>
+    <meta
+      name="description"
+      content="Phoenix helps researchers understand the energy footprint of their data and adopt sustainable data management habits."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Patrick+Hand&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="page">
-      <header>
-        <!--<a class="logo" href="phoenix.svg" aria-label="Home">Logo</a>-->
-        <img src="phoenix.svg" alt="Logo" />
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="hero">
+        <img src="phoenix.svg" alt="Phoenix logo" />
         <h1>Phoenix</h1>
-        <h2>
-          Energy-aware<strong> Data Management </strong> <br />from Practice to
+        <p class="tagline">
+          Energy-aware <strong>Data Management</strong><br />from Practice to
           Research
-        </h2>
-      </header>
-
-      <main>
-        <section id="news">
-          <h2>News</h2>
-          <p>
-            <time datetime="2026-06-17">17 April 2026</time>: Grant
-            <a
-              href="https://www.nwo.nl/en/news/sustainable-science-fund-20-projects-granted-funding-to-make-research-practices-more-sustainable"
-              >"KIN Science in Transition Sustainable Science Fund 2025/2026"</a
-            >
-            awarded
-          </p>
-          <br />
-          <p>
-            <time datetime="2026-08-31">31 August 2026</time>: Kickoff Meeting
-          </p>
-        </section>
-
-        <section id="Goal">
-          <h2>Goal</h2>
-          <p>
-            The Phoenix project aims at
-            <strong
-              >supporting researchers to become aware of the energy footprint of
-              their data</strong
-            >
-            and
-            <strong
-              >learn how they can adopt habits of sustainable data
-              management</strong
-            >, so as to both <em class="highlight">optimize</em> the existing
-            data and <em class="highlight">change their own behavior</em>.
-          </p>
-        </section>
-
-        <!--
-        <section id="results">
-          <h2>Results</h2>
-          <p>Work in Progress</p>
-        </section>
-        -->
-
-        <section id="people">
-          <h2>People</h2>
-          <ul class="people-list">
-            <li>
-              <strong class="name">Patricia Lago</strong>
-              <span class="institution">Vrije Universiteit Amsterdam</span>
-            </li>
-            <li>
-              <strong class="name">Engelbert Fellinger</strong>
-              <span class="institution">Vrije Universiteit Amsterdam</span>
-            </li>
-            <li>
-              <strong class="name">Markus Funke</strong>
-              <span class="institution">Vrije Universiteit Amsterdam</span>
-            </li>
-            <li>
-              <strong class="name">Marlike Ridderbos</strong>
-              <span class="institution">DG Leaders</span>
-            </li>
-            <li>
-              <strong class="name">Jordi Verhulp</strong>
-              <span class="institution">DG Leaders</span>
-            </li>
-            <li>
-              <strong class="name">Neele van den Bongardt</strong>
-              <span class="institution">Vrije Universiteit Amsterdam</span>
-            </li>
-            <li>
-              <strong class="name">Femke Bartelds</strong>
-              <span class="institution">ECP</span>
-            </li>
-            <li>
-              <strong class="name">Michelle Bosquet</strong>
-              <span class="institution">Vrije Universiteit Amsterdam</span>
-            </li>
-            <li>
-              <strong class="name">Vincenzo Stoico</strong>
-              <span class="institution">Vrije Universiteit Amsterdam</span>
-            </li>
-          </ul>
-        </section>
-      </main>
-      <footer>
-        <ul class="logos">
-          <li><img src="nwo_logo.png" alt="NWO_LOGO" /></li>
-          <li><img src="s2_logo.png" alt="S2_LOGO" /></li>
-          <li><img src="logo3.svg" alt="Partner 3 logo" /></li>
+        </p>
+      </div>
+      <nav class="site-nav" aria-label="Sections">
+        <ul>
+          <li><a href="#news">News</a></li>
+          <li><a href="#goal">Goal</a></li>
+          <li><a href="#motivation">Motivation</a></li>
+          <li><a href="#method">Method</a></li>
+          <li><a href="#plan">Work plan</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#open-science">Open science</a></li>
+          <li><a href="#people">People</a></li>
         </ul>
-        <p>Released under the <a href="LICENSE">MIT License</a>.</p>
-      </footer>
-    </div>
+      </nav>
+    </header>
+
+    <main id="main" class="page">
+      <section id="news" aria-labelledby="news-title">
+        <h2 id="news-title">News</h2>
+        <ul class="news-list">
+          <li>
+            <time datetime="2026-06-17">17 April 2026</time>
+            <p>
+              Grant
+              <a
+                href="https://www.nwo.nl/en/news/sustainable-science-fund-20-projects-granted-funding-to-make-research-practices-more-sustainable"
+                >“KIN Science in Transition Sustainable Science Fund
+                2025/2026”</a
+              >
+              awarded
+            </p>
+          </li>
+          <li>
+            <time datetime="2026-08-31">31 August 2026</time>
+            <p>Kickoff Meeting</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="goal" aria-labelledby="goal-title">
+        <h2 id="goal-title">Goal</h2>
+        <p class="lead">
+          The Phoenix project aims at
+          <strong
+            >supporting researchers to become aware of the energy footprint of
+            their data</strong
+          >
+          and
+          <strong
+            >learn how they can adopt habits of sustainable data
+            management</strong
+          >, so as to both <em class="highlight">optimize</em> the existing data
+          and <em class="highlight">change their own behavior</em>.
+        </p>
+      </section>
+
+      <section id="motivation" aria-labelledby="motivation-title">
+        <h2 id="motivation-title">Motivation</h2>
+        <div class="prose">
+          <p>
+            We focus on <strong>data unsustainability</strong> for two reasons.
+            First, data is a digital asset shared by industry and research, so
+            we can learn from industry results and adapt them to academia, and
+            vice versa. Second, in both contexts the way data is managed has a
+            large and growing environmental impact worldwide.
+          </p>
+          <dl class="stats">
+            <div>
+              <dt>394 ZB</dt>
+              <dd>
+                of new data expected in 2028, up from 132.4 ZB in 2023 (IDC)
+              </dd>
+            </div>
+            <div>
+              <dt>85%</dt>
+              <dd>
+                of stored enterprise data is not business critical (Veritas
+                survey of 2,550 IT decision makers in 22 countries)
+              </dd>
+            </div>
+            <div>
+              <dt>2%</dt>
+              <dd>of global carbon emissions is estimated to come from unused data</dd>
+            </div>
+          </dl>
+          <p>
+            Most data that organisations store is never used. The Veritas study
+            estimates that only 15% of organisational data is business
+            critical, 33% is redundant, obsolete or trivial, and 52% is
+            unidentified, yet all of it keeps consuming energy. Similar figures
+            apply to research. The growth of AI investments is accelerating
+            these trends.
+          </p>
+        </div>
+      </section>
+
+      <section id="method" aria-labelledby="method-title">
+        <h2 id="method-title">Method</h2>
+        <div class="prose">
+          <p>
+            We integrate two existing methods, and the knowledge gathered by
+            applying them in industry, and transfer them to academic research.
+          </p>
+
+          <h3>SIIA: Sustainability IT Impact Assessment</h3>
+          <p>
+            Defined by NCDD, the SIIA grew out of industrial practice. It guides
+            people and organisations who want to start investing in sustainable
+            IT. It consists of a guide, a wiki of tactics collected in industrial
+            use cases, and the SIIA radar, a visual overview for selecting and
+            prioritising those tactics. Practitioners find it easy to
+            understand, pragmatic and visually appealing, but its tactics are
+            informal.
+          </p>
+
+          <h3>SAF Toolkit: Sustainability Assessment Framework</h3>
+          <p>
+            Built on rigorous academic research and over a decade of case
+            studies, the SAF Toolkit helps software architects and IT decision
+            makers model sustainability as a software quality property. It
+            offers a database of reusable sustainability-quality (SQ) concerns,
+            an open source archive of tactics, a checklist and a decision graph.
+            Its three main outputs are an SQ Model, a Decision Map and a KPI
+            Model.
+          </p>
+
+          <h3>Better together</h3>
+          <p>
+            The SIIA can be the visual <strong>front end</strong> that guides
+            researchers in planning for sustainability. The SAF Toolkit can be
+            the rigorous <strong>back end</strong> that translates the plan into
+            concrete tactics and measures their effect, with full traceability
+            from IT features to indicators.
+          </p>
+
+          <aside class="callout">
+            <h4>Example: cleaning up research datasets</h4>
+            <p>
+              A research dataset should typically be kept for 10 years in a
+              persistent repository. In practice, copies often stay behind on
+              unprotected platforms such as Google Drive, or are kept for the
+              wrong period. A tactic could give each dataset an expiration date,
+              for semi-automated cleaning after 10 years, and remove duplicates.
+              Its impact is measured as the amount of unused data cleaned up and
+              duplicate data removed, and the energy this saves.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="plan" aria-labelledby="plan-title">
+        <h2 id="plan-title">Work plan</h2>
+        <div class="prose">
+          <p>
+            Once the methods are integrated, we carry out 2–3 case studies with
+            researchers from NCDD member institutions. Each case study picks a
+            research data management (RDM) use case, models its IT features and
+            sustainability concerns, selects and applies energy-saving tactics,
+            and measures the effect on energy consumption and carbon emissions.
+            Use cases are chosen for the scope and size of their data, the
+            availability of researchers and IT support, and whether the effect
+            of a tactic can be measured.
+          </p>
+        </div>
+        <ol class="wp-list">
+          <li>
+            <h3>WP1: Integrate and adapt existing methods</h3>
+            <p>
+              Integrate the SAF Toolkit instruments into the SIIA. A first
+              version of the integrated method is ready in the first quarter,
+              then updated every quarter with case study results.
+            </p>
+            <p class="milestone">
+              <strong>M1:</strong> SIIA and SAF Toolkit integrated into one
+              method, from practice to research.
+            </p>
+          </li>
+          <li>
+            <h3>WP2.1: Validate the integrated method</h3>
+            <p>
+              Apply and improve the method in 2–3 case studies. We start at VU
+              Amsterdam with the VU Sustainability Office. Other candidates are
+              TU Delft, University of Twente, Hogeschool Utrecht, Radboud
+              University and Leiden University.
+            </p>
+            <p class="milestone">
+              <strong>M2:</strong> Case studies completed and the method
+              revised.
+            </p>
+          </li>
+          <li>
+            <h3>WP2.2: Validate existing and create new knowledge</h3>
+            <p>
+              Model and measure green tactics that reduce the energy use and
+              carbon footprint of each use case.
+            </p>
+            <p class="milestone">
+              <strong>M3:</strong> Existing tactics validated and new ones
+              created.
+            </p>
+          </li>
+          <li>
+            <h3>WP3: Knowledge dissemination and reporting</h3>
+            <p>
+              A public event for NCDD members, Amsterdam Sustainability
+              Institute (ASI) members and partners such as SURF, NL-RSE and
+              GreenLabs NL. We also prepare training material so researchers can
+              learn about their options for sustainable data management.
+            </p>
+            <p class="milestone">
+              <strong>M4:</strong> Dissemination event and paper draft.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="impact" aria-labelledby="impact-title">
+        <h2 id="impact-title">Potential impact</h2>
+        <div class="prose">
+          <p>
+            Recent news reports that data centres in the Netherlands used more
+            than <strong>4.6% of national energy</strong> in 2025. Of the
+            roughly 200 data centres, about 75% belong to universities,
+            hospitals and industry and serve in-house storage and processing.
+          </p>
+          <p>
+            If a large share of that data is unnecessary, as in the 85% found
+            for enterprises, the project can contribute substantially to energy
+            optimisation. The aim is that future research produces data that is
+            <em class="highlight">sustainable by design</em>.
+          </p>
+        </div>
+      </section>
+
+      <section id="open-science" aria-labelledby="open-title">
+        <h2 id="open-title">Open science and dissemination</h2>
+        <div class="prose">
+          <p>
+            The integrated method and all knowledge produced by the project are
+            shared as open source and open access. The SIIA wiki and the SAF
+            Toolkit repositories are already open source. At the end of each
+            quarter, NCDD and VU partners consolidate results into one open
+            source platform, for example a new GitHub repository.
+          </p>
+          <p>
+            VU Amsterdam ensures that all case study activities follow open
+            science principles: transparency, reproducibility and equity. ASI
+            publishes results on a dedicated webpage and on LinkedIn, and shares
+            them through sustainable science networks such as the Sustainable
+            Development Solutions Network and the International Sustainable
+            Campus Network, to reach beyond the Netherlands.
+          </p>
+        </div>
+      </section>
+
+      <!--
+      <section id="results">
+        <h2>Results</h2>
+        <p>Work in Progress</p>
+      </section>
+      -->
+
+      <section id="people" aria-labelledby="people-title">
+        <h2 id="people-title">People</h2>
+        <ul class="people-list">
+          <li>
+            <strong class="name">Patricia Lago</strong>
+            <span class="institution">Vrije Universiteit Amsterdam</span>
+          </li>
+          <li>
+            <strong class="name">Engelbert Fellinger</strong>
+            <span class="institution">Vrije Universiteit Amsterdam</span>
+          </li>
+          <li>
+            <strong class="name">Markus Funke</strong>
+            <span class="institution">Vrije Universiteit Amsterdam</span>
+          </li>
+          <li>
+            <strong class="name">Marlike Ridderbos</strong>
+            <span class="institution">DG Leaders</span>
+          </li>
+          <li>
+            <strong class="name">Jordi Verhulp</strong>
+            <span class="institution">DG Leaders</span>
+          </li>
+          <li>
+            <strong class="name">Neele van den Bongardt</strong>
+            <span class="institution">Vrije Universiteit Amsterdam</span>
+          </li>
+          <li>
+            <strong class="name">Femke Bartelds</strong>
+            <span class="institution">ECP</span>
+          </li>
+          <li>
+            <strong class="name">Michelle Bosquet</strong>
+            <span class="institution">Vrije Universiteit Amsterdam</span>
+          </li>
+          <li>
+            <strong class="name">Vincenzo Stoico</strong>
+            <span class="institution">Vrije Universiteit Amsterdam</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <h2>Funded and supported by</h2>
+        <ul class="logos">
+          <li><img src="nwo_logo.png" alt="NWO" /></li>
+          <li><img src="s2_logo.png" alt="S2 Group" /></li>
+          <li><img src="logo3.svg" alt="Partner 3" /></li>
+        </ul>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#top">Back to top</a>
+          <a href="#news">News</a>
+          <a href="#goal">Goal</a>
+          <a href="#people">People</a>
+        </nav>
+        <p class="legal">Released under the <a href="LICENSE">MIT License</a>.</p>
+      </div>
+    </footer>
   </body>
 </html>
