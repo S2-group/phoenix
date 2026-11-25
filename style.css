@@ -361,6 +361,7 @@ ul.references {
 .people-list li {
   display: flex;
   flex-direction: column;
+  text-align: center;
   padding: 0.9rem 1.1rem;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -425,6 +426,12 @@ ul.references {
   height: auto;
   max-height: 5rem;
   max-width: min(100%, 22rem);
+}
+
+/* DGL's mark is tightly cropped and heavy, so it reads larger
+   than the others at the same height. */
+.logos .logo-dgl {
+  max-height: 3rem;
 }
 
 /* Logos with a white background and dark text: invert them so the
